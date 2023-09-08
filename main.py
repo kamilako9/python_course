@@ -342,4 +342,84 @@ import string
 #         print(f"Pavadinimas: {prekes_info['pavadinimas']}, Kaina: {prekes_info['kaina']}")
 #     print(f"Bendra kaina: {Krepselio_suma}")
 
+#pasirenka varda pagal skaiciu (priminimas: skaiciuoja nuo 0), jeigu nieko nepasirenkame, grazina paskutini vardo
+# vardai = ['Jonas', 'Petras', 'Marius', 'Laura']
+# pirmas_vardas = vardai.pop(2)
+# print(pirmas_vardas)
 
+#insert - ikelia papildoma reiksme sarase, (pagal indeksavima)
+#append - prideda paskutine reiksme i sarasa
+# vardai.insert(1, 'Giedrius')
+# print(vardai)
+
+#sort- rusiuoja pagal abecele (pagal nutylejima)
+# vardai.sort()
+# print(vardai)
+
+#pasalina pirma reiksme
+# vardai.remove('Laura')
+# print(vardai)
+
+
+#trys sarasai
+#() - tupple - negalima keisti reiksmiu, naudingas kai turime duomenis ir nenorime juose nieko keisti
+#[] - sarasas - galima prideti, atimti, keisti ir tt
+
+# vaisiai = ('obuolys', 'kriause', 'bananas', 'braske')
+# vaisiai1 = ['obuolys', 'kriause', 'bananas', 'braske']
+
+# vaisiai2 = vaisiai[0]
+# print(vaisiai2)
+
+# skaiciai = (3.14, 2.71)
+# x, y = skaiciai
+# print(x)
+# print(y)
+
+#enumarate - jo tikslas yra gauti tiek elementu, kiek turime objekte, pvz sarase
+#startas - elementas nuo kurio pradedama skaciuoti (python indeksavimas prasideda nuo 0,
+# bet sioje funkcijoje pradeda skaiciuoti standartiskai nuo 1.
+# vaisiai = ['obuolys', 'kriause', 'bananas', 'braske']
+# for indeksas, vaisius in enumerate(vaisiai, start=1):
+#     print(f"{indeksas}. {vaisius}")
+
+
+#kaip galima sukurti nauja faila
+# r-read, w-write, a-append)
+# with open("failo_pav.txt", "w", encoding="utf-8") as file:
+#     content = file.write("kuriame nauja faila")
+
+# append- prideda nauja teksta
+# with open("failo_pav.txt", "a", encoding="utf-8") as file:
+#     content = file.append(\n "papildomas tekstas")
+
+# read- nuskaito teksta esanciame faile
+# with open("failo_pav.txt", "r", encoding="utf-8") as file:
+#     content = file.read()
+#     print(content)
+
+#kitos budas nuskaityti faile esanti teksta (be read funkcijos, o su for)
+# with open("failo_pav.txt", "r", encoding="utf-8") as file:
+#     for eilute in file:
+#         print(eilute.strip())
+
+#1. Sukurkite sąrašą temperatūros su temperatūromis.
+#Patikrinkite kiekvieną temperatūrą sąraše ir išveskite "šilta" (jei temperatūra virš 20)
+#arba "šalta" (jei temperatūra 20 ar mažiau).
+
+temperaturos = [9, 15, 27, 23, 20, 29]
+
+
+# 2. Turite žodyną su studentų vardais ir jų pažymiais.
+# Parašykite "for" ciklą, kuris išveda kiekvieno studento vardą ir jo pažymį.
+#
+# 3. Sukurkite tuščią sąrašą sarasas ir leiskite vartotojui įvesti skaičius.
+# Naudojant "while" ciklą, pridėkite kiekvieną įvestą skaičių prie sąrašo.
+# Ciklą nutraukite, kai vartotojas įveda 0.
+#
+# 4. Turite žodyną, kuriame saugomi gėrimų pavadinimai ir jų kainos.
+# Vartotojas įveda gėrimo pavadinimą, o jūs patikrinkite, ar tokio pavadinimo gėrimas yra žodyne.
+# Jei taip, išveskite jo kainą; jei ne, išveskite pranešimą "Gėrimas nerastas".
+#
+# 5. Patikrinkite, ar skaičiai sąraše yra lyginiai arba nelyginiai. Sukurkite du tuščius sąrašus:
+# vienas lyginiams ir kitą nelyginiams skaičiams, išrūšiuokite lyginius ir nelyginius skaičius iš skaičiai sąrašo.
