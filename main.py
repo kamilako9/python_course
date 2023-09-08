@@ -423,3 +423,91 @@ temperaturos = [9, 15, 27, 23, 20, 29]
 #
 # 5. Patikrinkite, ar skaičiai sąraše yra lyginiai arba nelyginiai. Sukurkite du tuščius sąrašus:
 # vienas lyginiams ir kitą nelyginiams skaičiams, išrūšiuokite lyginius ir nelyginius skaičius iš skaičiai sąrašo.
+
+
+# funkcijos
+# def pasisveikinimas(vardas):
+#     sveikinimas = f"Sveiki, {vardas}"
+#     return sveikinimas
+# #return-grazina rezultata - privalomas, kad grazintu tai, ka atlieka ta funkcija
+#
+# vardas = input("Iveskite savo varda: ")
+# sveikinimas = pasisveikinimas(vardas)
+# print(sveikinimas)
+
+
+#def-apibreziame funkcija
+#ar_lyginis - funkcija
+# (skaicius) - parametras
+
+# def ar_lyginis(skaicius):
+#     if skaicius %2== 0:
+#         return True
+#     else:
+#         return False
+#
+# skaicius = 5
+# if ar_lyginis(skaicius):
+#     print(f"{skaicius} yra lyginis")
+# else:
+#     print (f"{skaicius} yra nelyginis")
+
+# def suma(a,b):
+#     rezultatas = a + b
+#     return(rezultatas)
+#
+# x = 5
+# y = 2
+# sumos_rezultatas = suma(x,y)
+# print(f"{x} + {y} = {sumos_rezultatas}")
+
+# def vidurkis(skaiciai):
+#     suma = sum(skaiciai)
+#     avg = suma / len(skaiciai)
+#     return avg
+#
+# sarasas = [23, 45, 67, 88, 95]
+# rezultatas = vidurkis(sarasas)
+# print(f"saraso vidurkis: {rezultatas}")
+
+#1. patikrinti ar skaicius yra teigiamas ar neigiamas
+# def ar_teigiamas(skaicius):
+#     if skaicius > 0:
+#         return True
+#     else:
+#         return False
+# skaicius = -34
+# if ar_teigiamas(skaicius):
+#     print(f"{skaicius} yra teigiamas")
+# else:
+#     print(f"{skaicius} yra neigiamas")
+
+#2. parasyti funkcija kuri suras didziausia reiksme sarase
+# def didziausias_skaicius(sarasas):
+#     didziausias = sarasas[0]
+#     for i in sarasas:
+#         if i > didziausias:
+#             didziausias = i
+#     return didziausias
+# sk_sarasas = [2,54,34,67,25,11,48]
+# didziausias = didziausias_skaicius(sk_sarasas)
+# print(f"didziausias skaicius yra {didziausias}")
+
+#3. parasyti funkcija kuri sujuncia du sarasus
+# def sujungti_sarasai(sarasas1, sarasas2):
+#     sujungtas_sarasas = sarasas1 + sarasas2
+#     return sujungtas_sarasas
+# a = [1,3,6,9]
+# b= [56,87,23,90]
+# sujungtas = sujungti_sarasai(a, b)
+# print(sujungtas)
+
+#4. funkcija, kuri suras didesni skaiciu nei nurodyta sarase
+# def didesnis(sarasas, skaicius):
+#     didis = [sk_1 for sk_1 in sarasas if sk_1 > skaicius]
+#     return didis
+# sarasas = [3, 56, 8, 123, 567]
+# n = 9
+# didesni_sk = didesnis(sarasas, n)
+# print(f"sarase skaiciai didesni uz {n} yra {didesni_sk}")
+#
