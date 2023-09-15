@@ -111,3 +111,21 @@ import matplotlib.pyplot as plt
 # df.loc[df['Miestas'] == 'Vilnius', 'Populiacija'] += 10000
 # print(df)
 
+#  * Sukurkite Pandas duomenų lentelę su 5 eilutėmis ir 3 stulpeliais.
+#    * Pavadinkite stulpelius "Vardas", "Amžius" ir "Miestas".
+#    * Įtraukite naują eilutę į lentelę su duomenimis: "Jonas", 30, "Vilnius".
+#    * Išspausdinkite pirmas 3 eilutes iš lentelės.
+#    * Išspausdinkite stulpelį "Amžius" visų eilučių atveju.
+#    * Atrinkite visus žmones, kurių amžius yra mažesnis nei 25.
+#    * Sukurkite naują stulpelį "Gimimo metai" pagal esamą stulpelį "Amžius".
+#    Paskaičiuokite gimimo metus pagal 2023 metus.
+#    * Ištrinkite eilutę su "Jonas" iš lentelės.
+#    * Išsaugokite lentelę į CSV failą pavadinimu "duomenys.csv".
+#    * Nuskaitykite duomenis iš "duomenys.csv" failo į naują Pandas lentelę.
+#    * Atrinkite visus žmones, gyvenančius Vilniuje.
+zmones = {'Vardas': ['Ieva', 'Ona', 'Tomas', 'Petras'],
+          'Amzius': [14, 34, 8, 76],
+          'Miestas': ['Kaunas', 'Plunga', 'Palanga', 'Vilnius']
+           }
+df = pd.DataFrame(zmones)
+print(df)
